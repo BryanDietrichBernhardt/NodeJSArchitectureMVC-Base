@@ -1,0 +1,63 @@
+POST http://localhost:3000/api/groups
+Content-Type: application/json
+
+{
+  "name": "clientt"
+}
+
+###
+GET http://localhost:3000/api/groups
+
+###
+
+GET http://localhost:3000/api/groups/63b7a18ea3ce8fe75a3ef73a
+
+###
+DELETE http://localhost:3000/api/groups/63b7a176a3ce8fe75a3ef734
+
+###
+PUT http://localhost:3000/api/groups/63b7a18ea3ce8fe75a3ef73a
+Content-Type: application/json
+
+{
+  "name": "client"
+}
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "name": "Bryan",
+  "email": "contact@bryandbernhardt.com",
+  "password": "12345",
+  "group": [
+    {
+      "name": "admin"
+    }
+  ]
+}
+
+###
+GET http://localhost:3000/api/users
+
+###
+GET http://localhost:3000/api/users/63b7aafa6d8ce8abd1e8a16c
+
+###
+DELETE http://localhost:3000/api/users/63b7aafa6d8ce8abd1e8a16c
+
+###
+PUT http://localhost:3000/api/users/63b7aafa6d8ce8abd1e8a16c
+Content-Type: application/json
+
+{
+  "name": "Bryan",
+  "email": "contact@bryandbernhardt.com",
+  "password": "12345",
+  "group": [
+    {
+      "name": "admin"
+    }
+  ]
+}
